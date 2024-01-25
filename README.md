@@ -8,9 +8,11 @@ echo "# mlproject" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
+git status
 git branch -M main
 git remote add origin https://github.com/AmlanSamanta/mlproject.git
-git push -u origin main
+git remote -v
+git push -u origin main (If you are a first time user of Git in your cxomputer's command line, run these first and then go for pushing changes: git config --global user.name "<Your name>"; git config --global user.email "<Your email>")
 
 …or push an existing repository from the command line
 git remote add origin https://github.com/AmlanSamanta/mlproject.git
