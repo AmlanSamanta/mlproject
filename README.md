@@ -42,4 +42,5 @@ After successfull installation activate the same with it: <conda activate venv/>
     - Pipeline: under which all pipeline modules will be 
     - <exception.py>: custom exception handler
     - <logger.py>: custom logger
-    - <utils.py>: common useful functions to be accessed across entire project 
+    - <utils.py>: common useful functions to be accessed across entire project
+11. Create a folder <notebooks> outside <src> where all Jupyter notebooks will stay.
