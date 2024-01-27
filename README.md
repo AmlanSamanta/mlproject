@@ -1,5 +1,8 @@
 ### End to end Machine Learning project
 
+
+## Steps
+
 1. Create a public repo in Github (to share the work with world) with a name, say, mlproject, without
 specifying any other details or chossing options. It is succesfully done, you will be able to view some commands like below:
 
@@ -25,9 +28,18 @@ git push -u origin main
 After successfull installation activate the same with it: <conda activate venv/>
 4. Now follow the steps shown in Step 1 under "create a new repository on the command line" section.
 5. create a .gitignore file with Python template and commit the changes to the newly created repository. Also do <git pull> to sync the changes from remote to local.
+
+## Development of project structure: It can be automated by leverging <template.py> 
+
 6. Create 2 more files:
    -- setup.py: for building the entire application as package 
    -- requirements.txt: for efficient installation of project dependencies
-7. Write code in setup.py and create a directory inside our project with name 'src', also create a file with name '__init__.py' inside 'src' to identify it as a package.
+7. Write code in setup.py and create a directory inside our project with name 'src', also create a file with name '__init__.py' inside 'src' to identify it as a package. Whatever project components we will be developing, would reside inside this directory.
 8. Add '-e .' in requirements.txt to trigger the execution of <setup.py> file at the time of installing requirements from command line and also to build the application as package. Accordingly do adjustments in the <setup.py> code.
 9. Now open terminal and run <pip install -r requirements.txt>. Once the process is done successfully, you should be able to see mlProject.egg-info folder inside your project. It means your project is built successfully as a python package which can be release into Pypi portal.
+10. Create below mentioned directories and files inside <src>:
+    - Components: under which all the project modules will reside
+    - Pipeline: under which all pipeline modules will be 
+    - <exception.py>: custom exception handler
+    - <logger.py>: custom logger
+    - <utils.py>: common useful functions to be accessed across entire project 
